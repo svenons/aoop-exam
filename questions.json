@@ -1,0 +1,676 @@
+{
+    "Recursion": [
+        {
+            "question": "Which of the following best describes recursion in programming?",
+            "choices": [
+                "A. A function that calls itself.",
+                "B. A function that calls another function.",
+                "C. A loop that iterates over a collection.",
+                "D. A function that runs indefinitely."
+            ],
+            "answer": "A",
+            "reason": "Recursion is defined as a function that calls itself."
+        },
+        {
+            "question": "In a recursive function, what is the purpose of the condition that checks if the input has reached a certain value?",
+            "choices": [
+                "A. To create an infinite loop.",
+                "B. To stop the recursion and return a result.",
+                "C. To call another function.",
+                "D. To print a message to the console."
+            ],
+            "answer": "B",
+            "reason": "The stopping condition (base case) terminates the recursion and returns a result, preventing infinite loops."
+        },
+        {
+            "question": "Given the following code, how many times is the printHello function called when printHello(3) is executed?\nvoid printHello(int n) {\n    if (n <= 0) return;\n    Console.WriteLine(\"Hello\");\n    printHello(n - 1);\n}",
+            "choices": [
+                "A. 1",
+                "B. 2",
+                "C. 3",
+                "D. 4"
+            ],
+            "answer": "C",
+            "reason": "printHello(3) results in the function being called with n = 3, 2, 1, for a total of 3 calls."
+        },
+        {
+            "question": "What will be the output of the following recursive function call sum(4)?\nint Sum(int n) {\n    if (n == 0) return 0;\n    return n + Sum(n - 1);\n}",
+            "choices": [
+                "A. 4",
+                "B. 10",
+                "C. 15",
+                "D. 20"
+            ],
+            "answer": "B",
+            "reason": "sum(4) calculates the sum of all integers from n down to 0, resulting in 4 + 3 + 2 + 1 + 0 = 10."
+        },
+        {
+            "question": "What is a common issue that can arise in recursive functions if the stopping condition is not properly handled?",
+            "choices": [
+                "A. Infinite loops",
+                "B. Compilation errors",
+                "C. Stack overflow",
+                "D. Syntax errors"
+            ],
+            "answer": "C",
+            "reason": "Failing to handle the stopping condition properly can lead to stack overflow due to excessive recursive calls."
+        }
+    ],
+    "Practical Problem Solving": [
+        {
+            "question": "Which of the following activities is part of the design phase in the SDLC?",
+            "choices": [
+                "A. Writing code for the application",
+                "B. Defining user requirements",
+                "C. Creating architectural diagrams",
+                "D. Testing the application"
+            ],
+            "answer": "C",
+            "reason": "Creating architectural diagrams is a key activity in the design phase."
+        },
+        {
+            "question": "What does decomposition in algorithmic thinking help achieve?",
+            "choices": [
+                "A. Combining multiple problems into one large problem",
+                "B. Breaking down a complex problem into smaller, manageable parts",
+                "C. Writing code without planning",
+                "D. Designing the user interface"
+            ],
+            "answer": "B",
+            "reason": "Decomposition helps break down complex problems into smaller, manageable parts."
+        },
+        {
+            "question": "Given the following code snippet, how would you apply abstraction to improve this function?\npublic bool IsEven(int number) {\n    return number % 2 == 0;\n}",
+            "choices": [
+                "A. Combine it with another function to check if a number is odd.",
+                "B. Simplify it by removing the modulus operation.",
+                "C. Create a general-purpose function that checks any number property.",
+                "D. Leave it as it is, since it's already optimal."
+            ],
+            "answer": "C",
+            "reason": "Creating a general-purpose function that checks any number property applies abstraction."
+        },
+        {
+            "question": "Given the task to find the maximum value in an array, what is the first step according to PADM?",
+            "choices": [
+                "A. Start coding immediately to find the maximum value.",
+                "B. Analyze the problem to determine the requirements and constraints for finding the maximum value.",
+                "C. Test different arrays to ensure the function works.",
+                "D. Deploy the solution to production."
+            ],
+            "answer": "B",
+            "reason": "Analyzing the problem is the first step according to PADM."
+        },
+        {
+            "question": "Given the following code snippet, how would you improve this code snippet to enhance performance and readability?\npublic int FindMax(int[] numbers) {\n    int max = numbers[0];\n    for (int i = 1; i < numbers.Length; i++) {\n        if (numbers[i] > max) {\n            max = numbers[i];\n        }\n    }\n    return max;\n}",
+            "choices": [
+                "A. Add more variables to track the minimum value as well.",
+                "B. Document the method, then review and optimize the loop conditions.",
+                "C. Rewrite the function to use recursion.",
+                "D. Remove the loop and use a built-in method."
+            ],
+            "answer": "B",
+            "reason": "Documenting and optimizing improves readability and performance."
+        }
+    ],
+    "Collaborative Coding": [
+        {
+            "question": "You are starting a new project and want to initialize a Git repository. Which sequence of commands correctly sets up the repository and stages your initial files for commit?",
+            "choices": [
+                "A. git clone [url], git add ., git commit -m 'Initial commit'",
+                "B. git init, git add ., git commit -m 'Initial commit'",
+                "C. git status, git add ., git commit -m 'Initial commit'",
+                "D. git init, git commit -m 'Initial commit', git add ."
+            ],
+            "answer": "B",
+            "reason": "git init initializes a new repository, git add . stages all files, and git commit -m 'Initial commit' commits the changes."
+        },
+        {
+            "question": "Given the following scenario, which command stages all your modified files for commit? 'modified: Contact.cs, modified: Program.cs'",
+            "choices": [
+                "A. git status",
+                "B. git add .",
+                "C. git commit -m 'Add changes'",
+                "D. git init"
+            ],
+            "answer": "B",
+            "reason": "git add . stages all changes."
+        },
+        {
+            "question": "After staging your changes, which command do you use to commit them to your local repository?",
+            "choices": [
+                "A. git add",
+                "B. git status",
+                "C. git commit -m 'Initial commit'",
+                "D. git push -m 'Initial commit'"
+            ],
+            "answer": "C",
+            "reason": "git commit -m 'Initial commit' commits staged changes."
+        },
+        {
+            "question": "You have modified two files: contact.cs and Program.cs. Which sequence of Git commands would you use to stage these files and commit them with the message 'Update contact and program logic'?",
+            "choices": [
+                "A. git add ., git commit -m 'Update contact and program logic'",
+                "B. git commit -m 'Update contact and program logic', git add .",
+                "C. git add Contact.cs Program.cs, git commit -m 'Update contact and program logic'",
+                "D. git status, git commit -m 'Update contact and program logic'"
+            ],
+            "answer": "C",
+            "reason": "Explicitly staging the modified files before committing helps ensure that only intended changes are included."
+        },
+        {
+            "question": "Your team has just completed a feature in a feature branch and wants to merge it into the main branch. Before merging, you need to ensure your feature branch is up to date with the main branch. Which sequence of commands accomplishes this?",
+            "choices": [
+                "A. git checkout main, git merge feature-branch, git push origin main",
+                "B. git checkout feature-branch, git pull origin main, git checkout main, git merge feature-branch",
+                "C. git pull origin feature-branch, git checkout main, git merge feature-branch",
+                "D. git fetch feature-branch, git checkout main, git merge feature-branch"
+            ],
+            "answer": "B",
+            "reason": "Updating the feature branch with changes from main before merging into main ensures that the integration is based on the latest state of the main branch."
+        }
+    ],
+    "Unit Testing": [
+        {
+            "question": "Which attribute in xUnit is used to define a test method?",
+            "choices": [
+                "A. [Test]",
+                "B. [Fact]",
+                "C. [InlineData]",
+                "D. [SetUp]"
+            ],
+            "answer": "B",
+            "reason": "[Fact] is the correct attribute used in xUnit to define a test method."
+        },
+        {
+            "question": "What is the purpose of the Arrange-Act-Assert pattern in unit testing?",
+            "choices": [
+                "A. To ensure tests are isolated from each other.",
+                "B. To structure tests clearly, separating setup, execution, and verification phases.",
+                "C. To minimize the time needed to write tests.",
+                "D. To ensure tests cover all possible code paths."
+            ],
+            "answer": "B",
+            "reason": "The Arrange-Act-Assert pattern helps to structure tests clearly by separating the setup, execution, and verification phases."
+        },
+        {
+            "question": "Which part of a unit test best demonstrates the 'Act' step in the Arrange/Act/Assert pattern?",
+            "choices": [
+                "A. Executing the method under test",
+                "B. Verifying the outcome of the method execution",
+                "C. Initializing the objects required for the test",
+                "D. Examining the behavior of dependencies"
+            ],
+            "answer": "A",
+            "reason": "The 'Act' step involves executing the method under test to observe behaviors or outcomes."
+        },
+        {
+            "question": "Which xUnit feature would you use to validate the behavior of the following method across a range of inputs?\npublic bool IsPrime(int number)\n{\n    if (number <= 1) return false;\n    for (int i = 2; i < number; i++)\n    {\n        if (number % i == 0) return false;\n    }\n    return true;\n}",
+            "choices": [
+                "A. [Fact] with multiple methods",
+                "B. [Theory] with [InlineData]",
+                "C. [Fact] with a loop inside the test method",
+                "D. [Fact] with [Theory]"
+            ],
+            "answer": "B",
+            "reason": "[Theory] with [InlineData] allows for testing multiple inputs in a single test method, making it ideal for this scenario."
+        },
+        {
+            "question": "Which of the following is a correct and ideal xUnit test for the Add method following the Arrange-Act-Assert pattern?\npublic int Add(int a, int b)\n{\n    return a + b;\n}",
+            "choices": [
+                "A. Arrange: var a = 1; var b = 2; Act: var result = a + b; Assert: Assert.Equal(3, result);",
+                "B. Arrange: var a = 2; var b = 1; Act: var result = Add(a, b); Assert: Assert.Equal(3, a + b);",
+                "C. Arrange: var a = 2; var b = 2; Act: var result = Add(a, b); Assert: Assert.Equal(4, result);",
+                "D. Arrange: var a = 3; var b = 0; Act: var result = Add(a, b); Assert: Assert.Equal(3, result);"
+            ],
+            "answer": "C",
+            "reason": "This choice correctly follows the Arrange-Act-Assert pattern with proper use of the Add method and validation of the result."
+        },
+        {
+            "question": "Which of the following correctly describes the difference between a mock and a stub?",
+            "choices": [
+                "A. A mock is a controllable replacement for an existing dependency, while a stub decides whether a test has passed or failed.",
+                "B. A mock decides whether a test has passed or failed, while a stub is a controllable replacement for an existing dependency.",
+                "C. A stub is a special type of mock.",
+                "D. There is no difference; the terms are interchangeable."
+            ],
+            "answer": "B",
+            "reason": "Mocks are used to verify interactions, while stubs provide controlled responses."
+        },
+        {
+            "question": "Which of the following is an example of a magic string in a unit test?",
+            "choices": [
+                "A. Assert.Equal(3, result);",
+                "B. var stringCalculator = new StringCalculator();",
+                "C. const string MAXIMUM_RESULT = \"1001\";",
+                "D. Action actual = () => stringCalculator.Add(\"1001\");"
+            ],
+            "answer": "D",
+            "reason": "Using a hard-coded string value in the test, which is an example of a magic string."
+        },
+        {
+            "question": "Which practice should be avoided when writing unit tests?",
+            "choices": [
+                "A. Using logic in tests",
+                "B. Using the Arrange-Act-Assert pattern",
+                "C. Naming tests with method name, scenario, and expected behavior",
+                "D. Writing minimally passing tests"
+            ],
+            "answer": "A",
+            "reason": "Using logic in tests can introduce errors and complexity, which is undesirable."
+        },
+        {
+            "question": "Which of the following tests correctly verifies the GetDiscountedPrice method?",
+            "choices": [
+                "A. Verify that GetDiscountedPrice returns full price when not Tuesday by mocking IDateTimeProvider to return Monday.",
+                "B. Verify that GetDiscountedPrice returns half price when not Tuesday by mocking IDateTimeProvider to return Wednesday.",
+                "C. Mock IDateTimeProvider to return Monday and verify GetDiscountedPrice returns half price.",
+                "D. None of the above"
+            ],
+            "answer": "A",
+            "reason": "It verifies the method's behavior when it is not Tuesday, ensuring it returns full price."
+        }
+    ],
+    "Graphical Desktop Development": [
+        {
+            "question": "In the MVVM pattern, what is the primary role of the ViewModel?",
+            "choices": [
+                "A. To handle all user interactions and UI updates.",
+                "B. Presentation logic and state management.",
+                "C. To directly manipulate the Model and View.",
+                "D. To define the layout and appearance of the UI."
+            ],
+            "answer": "B",
+            "reason": "The ViewModel is responsible for presentation logic and state management, acting as an intermediary between the View and the Model."
+        },
+        {
+            "question": "What is the main purpose of the Model in the MVVM pattern?",
+            "choices": [
+                "A. To define the structure and layout of the UI.",
+                "B. To handle user inputs and interactions.",
+                "C. To manage data and business logic.",
+                "D. To notify the View of property changes."
+            ],
+            "answer": "C",
+            "reason": "The Model manages data and business logic, providing the data the ViewModel requires to present the View."
+        },
+        {
+            "question": "In the context of MVVM and Avalonia UI, which class is specifically designed for collections and provides automatic notifications to the UI when the underlying data changes?",
+            "choices": [
+                "A. BindingMode",
+                "B. ObservableCollection",
+                "C. ReactiveObject",
+                "D. INotifyCollectionChanged"
+            ],
+            "answer": "B",
+            "reason": "ObservableCollection is designed for collections that automatically notify the UI of data changes."
+        },
+        {
+            "question": "Which of the following best describes the Observer pattern?",
+            "choices": [
+                "A. A pattern where objects are created from a template.",
+                "B. A pattern where an object delegates its responsibilities to another object.",
+                "C. A pattern where an object notifies its dependents of state changes.",
+                "D. A pattern where two objects communicate through a shared interface."
+            ],
+            "answer": "C",
+            "reason": "The Observer pattern involves an object notifying its dependents (observers) of state changes, promoting loose coupling."
+        },
+        {
+            "question": "In a common implementation of the Observer pattern, what does the subject typically maintain?",
+            "choices": [
+                "A. A queue of state change events.",
+                "B. A list of its observers.",
+                "C. A history of all past state changes.",
+                "D. A reference to the most recently updated observer."
+            ],
+            "answer": "B",
+            "reason": "The subject maintains a list of its observers to notify them of state changes."
+        },
+        {
+            "question": "How does the ObservableCollection class support the Observer pattern in Avalonia UI?",
+            "choices": [
+                "A. It triggers manual updates to the UI when the collection changes.",
+                "B. It automatically updates the UI when the collection changes.",
+                "C. It prevents changes to the collection.",
+                "D. It stores data without notifying the View."
+            ],
+            "answer": "B",
+            "reason": "ObservableCollection automatically updates the UI when the collection changes, adhering to the Observer pattern."
+        },
+        {
+            "question": "What is the main advantage of using the MVVM pattern in Avalonia UI development?",
+            "choices": [
+                "A. Increased coupling of UI and logic.",
+                "B. Enhanced data binding performance.",
+                "C. Separation of concerns.",
+                "D. Reduced XAML complexity."
+            ],
+            "answer": "C",
+            "reason": "The main advantage of MVVM is the separation of concerns, dividing the application into distinct layers."
+        },
+        {
+            "question": "In Avalonia UI, what role does INotifyPropertyChanged play in the implementation of the Observer pattern?",
+            "choices": [
+                "A. It handles direct manipulation of UI elements.",
+                "B. It allows objects to notify subscribers about changes to properties.",
+                "C. It manages application state and lifecycle.",
+                "D. It provides static data storage."
+            ],
+            "answer": "B",
+            "reason": "INotifyPropertyChanged allows objects to notify subscribers about property changes, crucial for data binding in MVVM."
+        },
+        {
+            "question": "In ReactiveUI, what is the primary purpose of the RaiseAndSetIfChanged method within a ViewModel?",
+            "choices": [
+                "A. To automatically bind a property to a UI element.",
+                "B. To trigger an animation when a property value changes.",
+                "C. To update a property's value and notify the UI of the change if the value has actually changed.",
+                "D. To validate user input and display error messages."
+            ],
+            "answer": "C",
+            "reason": "RaiseAndSetIfChanged updates the property's value and notifies the UI, ensuring the View is current with the ViewModel."
+        },
+        {
+            "question": "In the context of Avalonia UI and MVVM, what does the Model primarily represent?",
+            "choices": [
+                "A. The application's business logic and data.",
+                "B. The structure and visual layout of the user interface.",
+                "C. The presentation logic and state of the UI.",
+                "D. The interaction logic between the View and the ViewModel."
+            ],
+            "answer": "A",
+            "reason": "In MVVM, the Model represents the application's business logic and data, separated from the UI."
+        },
+        {
+            "question": "In the MVVM pattern, what is the primary responsibility of the ViewModel?",
+            "choices": [
+                "A. To handle business logic and data manipulation.",
+                "B. To define the structure, layout, and appearance of the UI.",
+                "C. To act as an intermediary between the Model and the View.",
+                "D. To manage application state and lifecycle."
+            ],
+            "answer": "C",
+            "reason": "The ViewModel acts as an intermediary between the Model and the View, managing the state and the presentation logic."
+        },
+        {
+            "question": "How does the ReactiveObject class support the MVVM pattern in Avalonia UI?",
+            "choices": [
+                "A. It directly handles user inputs.",
+                "B. It manages the application's lifecycle.",
+                "C. It provides a static method to update the UI.",
+                "D. It notifies the View of property changes."
+            ],
+            "answer": "D",
+            "reason": "ReactiveObject supports the MVVM pattern by notifying the View of property changes, facilitating responsive UIs."
+        },
+        {
+            "question": "How does the Observer pattern promote loose coupling between objects?",
+            "choices": [
+                "A. The subject and observers have direct references to each other.",
+                "B. The subject and observers communicate through a shared global variable.",
+                "C. The subject and observers interact through a well-defined interface.",
+                "D. The subject and observers are tightly integrated within a single class."
+            ],
+            "answer": "C",
+            "reason": "The Observer pattern promotes loose coupling by enabling interactions through a well-defined interface, not direct references."
+        },
+        {
+            "question": "What is the main advantage of using the Observer pattern?",
+            "choices": [
+                "A. It improves the performance of the application.",
+                "B. It reduces the memory usage of the application.",
+                "C. It makes the code more complex and harder to understand.",
+                "D. It enables objects to communicate with each other without tight coupling."
+            ],
+            "answer": "D",
+            "reason": "The main advantage of the Observer pattern is enabling communication without tight coupling, enhancing modularity and flexibility."
+        },
+        {
+            "question": "What is the primary responsibility of the View in the MVVM pattern?",
+            "choices": [
+                "A. To handle business logic and data manipulation.",
+                "B. To define the structure, layout, and appearance of the UI.",
+                "C. To act as an intermediary between the Model and the ViewModel.",
+                "D. To manage application state and lifecycle."
+            ],
+            "answer": "B",
+            "reason": "The View's primary responsibility is to define the UI's structure, layout, and appearance, decoupled from business logic."
+        }
+    ],
+    "Searching and Sorting in C#": [
+        {
+            "question": "In the context of implementing IComparable for a custom class, what is the purpose of the CompareTo method?",
+            "choices": [
+                "A. To determine if two objects are equal based on their properties.",
+                "B. To compare two objects and return a value indicating their relative order.",
+                "C. To perform a deep comparison of two objects, including their nested properties.",
+                "D. To provide a mechanism for sorting objects using the sort method of the List class."
+            ],
+            "answer": "B",
+            "reason": "The CompareTo method is used to define a default sort order by comparing the current object with another object of the same type."
+        },
+        {
+            "question": "In the context of the Array class in C#, what does the Rank property represent?",
+            "choices": [
+                "A. The number of elements in the array.",
+                "B. The dimension of the array.",
+                "C. The maximum index of the array.",
+                "D. The minimum index of the array."
+            ],
+            "answer": "B",
+            "reason": "The Rank property represents the number of dimensions of the array, not the number of elements."
+        },
+        {
+            "question": "Which sorting algorithm is often used in Array.Sort() for large arrays?",
+            "choices": [
+                "A. Bubble Sort",
+                "B. Insertion Sort",
+                "C. Merge Sort",
+                "D. Quick Sort"
+            ],
+            "answer": "D",
+            "reason": "Quick Sort is often used in Array.Sort() for large arrays due to its efficient handling of large data sets."
+        },
+        {
+            "question": "Given the following code snippet, which sorting algorithm is being implemented?\n\npublic void Sort(int[] array) {\n    for (int i = 0; i < array.Length - 1; i++) {\n        for (int j = 0; j < array.Length - i - 1; j++) {\n            if (array[j] > array[j + 1]) {\n                (array[j], array[j + 1]) = (array[j + 1], array[j]);\n            }\n        }\n    }\n}",
+            "choices": [
+                "A. Bubble Sort",
+                "B. Insertion Sort",
+                "C. Merge Sort",
+                "D. Selection Sort"
+            ],
+            "answer": "A",
+            "reason": "This code implements Bubble Sort, where each pair of adjacent elements is compared and the elements are swapped if they are not in order."
+        },
+        {
+            "question": "Which of the following is NOT a feature of the Array class in C#?",
+            "choices": [
+                "A. Searching",
+                "B. Sorting",
+                "C. Reversing elements",
+                "D. Dynamic resizing"
+            ],
+            "answer": "D",
+            "reason": "Arrays in C# have a fixed size once created and cannot be dynamically resized."
+        },
+        {
+            "question": "Why is MergeSort still used today despite its use of additional memory?",
+            "choices": [
+                "A. It guarantees the smallest possible memory usage.",
+                "B. It boasts exceptional performance on nearly sorted inputs.",
+                "C. It offers superior performance in distributed computing environments.",
+                "D. It simplifies implementation in resource-constrained environments."
+            ],
+            "answer": "C",
+            "reason": "Merge Sort is favored in distributed computing environments due to its efficiency and ease of parallelization."
+        },
+        {
+            "question": "Which of the following best describes how Heap Sort works?",
+            "choices": [
+                "A. It iteratively selects elements using a specialized data structure and places them in the sorted portion.",
+                "B. It employs a divide-and-conquer strategy, recursively breaking down the array into smaller segments and sorting them individually.",
+                "C. It iteratively selects the smallest element from the unsorted portion of the array and swaps it with the element at the beginning of the unsorted portion.",
+                "D. It rearranges elements based on their positions in the array, starting from the middle and working outwards."
+            ],
+            "answer": "A",
+            "reason": "Heap Sort utilizes a heap data structure to manage elements for sorting, making it efficient for extracting ordered elements."
+        },
+        {
+            "question": "What is a major advantage of Quick Sort over Merge Sort?",
+            "choices": [
+                "A. Quick Sort has a better worst-case time complexity.",
+                "B. Quick Sort is more stable than Merge Sort.",
+                "C. Quick Sort typically has better average-case performance.",
+                "D. Quick Sort can easily be parallelized."
+            ],
+            "answer": "C",
+            "reason": "While Quick Sort is not as stable or easy to parallelize as Merge Sort, it generally has better average-case performance."
+        },
+        {
+            "question": "What is the main difference between Depth-First Search (DFS) and Breadth-First Search (BFS) in tree traversal?",
+            "choices": [
+                "A. DFS uses a queue, while BFS uses a stack.",
+                "B. DFS uses a stack, while BFS uses a queue.",
+                "C. DFS is used for sorting, while BFS is used for searching.",
+                "D. DFS is faster than BFS in all cases."
+            ],
+            "answer": "B",
+            "reason": "DFS uses a stack to explore as far as possible along each branch before backing up, whereas BFS uses a queue to explore the nearest neighbors first."
+        },
+        {
+            "question": "What is the primary advantage of using Depth-First Search (DFS) over Breadth-First Search (BFS)?",
+            "choices": [
+                "A. DFS guarantees finding the shortest path.",
+                "B. DFS is always faster than BFS.",
+                "C. DFS can handle weighted graphs.",
+                "D. DFS uses less memory in most cases."
+            ],
+            "answer": "D",
+            "reason": "DFS can be more memory efficient than BFS, especially when the search tree is deep and solutions are far."
+        },
+        {
+            "question": "Which of the following LINQ methods performs a filtering operation on a collection?",
+            "choices": [
+                "A. Select",
+                "B. Where",
+                "C. OrderBy",
+                "D. GroupBy"
+            ],
+            "answer": "B",
+            "reason": "The 'Where' method in LINQ is used to filter collections according to a specified criteria."
+        },
+        {
+            "question": "What is the result of the following LINQ query?\n\nList<int> numbers = new List<int> {5, 3, 9, 1, 6};\nvar result = numbers.OrderBy(n => n).First();",
+            "choices": [
+                "A. 5",
+                "B. 3",
+                "C. 9",
+                "D. 1"
+            ],
+            "answer": "D",
+            "reason": "After sorting the numbers in ascending order, the smallest number '1' is returned as the first element."
+        }
+    ],
+    "Streams": [
+        {
+            "question": "Which of the following classes provides methods for reading and writing to files using byte streams in C#?",
+            "choices": [
+                "A. File",
+                "B. Stream",
+                "C. FileStream",
+                "D. MemoryStream"
+            ],
+            "answer": "C",
+            "reason": "FileStream is used for reading and writing to files using byte streams, while File provides static methods for file operations and MemoryStream operates on memory."
+        },
+        {
+            "question": "Which class in C# is typically used for reading text files line by line?",
+            "choices": [
+                "A. FileStream",
+                "B. StreamReader",
+                "C. BinaryReader",
+                "D. MemoryStream"
+            ],
+            "answer": "B",
+            "reason": "StreamReader is typically used for reading text files line by line, whereas FileStream and BinaryReader handle byte and binary data respectively."
+        },
+        {
+            "question": "What will be the content of the file after executing the following code? \nusing (FileStream fs = new FileStream('example.bin', FileMode.Create)) using (BinaryWriter writer = new BinaryWriter(fs)) { writer.Write(1234); writer.Write('Hello'); writer.Write(true); }",
+            "choices": [
+                "A. The file will contain the string '1234HelloTrue'.",
+                "B. The file will contain data representing the integer 1234, the string 'Hello', and the boolean true.",
+                "C. The file will be empty because it only writes to memory.",
+                "D. The file will contain only the string 'Hello' because it overrides previous content with each write operation."
+            ],
+            "answer": "B",
+            "reason": "The file will contain the binary representation of an integer, a string, and a boolean as BinaryWriter writes binary data."
+        },
+        {
+            "question": "Which method is used to move the position within a stream to a specified location in C#?",
+            "choices": [
+                "A. MoveTo",
+                "B. SetPosition",
+                "C. Seek",
+                "D. Position"
+            ],
+            "answer": "C",
+            "reason": "The Seek method is used to move the position within a stream, whereas Position is a property, not a method."
+        },
+        {
+            "question": "Which of the following methods is used to read binary data from a stream in C#?",
+            "choices": [
+                "A. Read",
+                "B. ReadBytes",
+                "C. ReadBinary",
+                "D. ReadBuffer"
+            ],
+            "answer": "B",
+            "reason": "ReadBytes is used to read a specified number of bytes from the stream, suitable for binary data."
+        },
+        {
+            "question": "How does the Pipestream class in C# facilitate inter-process communication?",
+            "choices": [
+                "A. By allowing the reading and writing of data to and from memory buffers.",
+                "B. By enabling data transfer between the memory and a file.",
+                "C. By providing a means for different processes to read and write data to the same named or unnamed pipe, facilitating communication.",
+                "D. By converting text data to binary data for communication between processes."
+            ],
+            "answer": "C",
+            "reason": "PipeStream facilitates inter-process communication through named or unnamed pipes, allowing different processes to read and write data."
+        },
+        {
+            "question": "What is the primary advantage of using BufferedStream in C#?",
+            "choices": [
+                "A. To handle network communications.",
+                "B. To provide a buffer for read and write operations, reducing the number of I/O operations and improving performance.",
+                "C. To read and write text data efficiently.",
+                "D. To encrypt data before writing it to the underlying stream."
+            ],
+            "answer": "B",
+            "reason": "BufferedStream improves performance by reducing the number of I/O operations through buffering read and write operations."
+        },
+        {
+            "question": "What does the Flush method do in the context of stream handling in C#?",
+            "choices": [
+                "A. It closes the stream.",
+                "B. It clears the buffer and discards the buffered data.",
+                "C. It resets the stream's position to the beginning.",
+                "D. It writes any buffered data to the underlying device."
+            ],
+            "answer": "D",
+            "reason": "Flush writes any buffered data to the underlying device, ensuring that all data is written from the buffer to the stream."
+        },
+        {
+            "question": "How do you set a timeout for read and write operations on a stream in C#?",
+            "choices": [
+                "A. Using the Timeout property.",
+                "B. Using the SetTimeout method.",
+                "C. Using the ReadTimeout and WriteTimeout properties.",
+                "D. Using the ConfigureTimeout method."
+            ],
+            "answer": "C",
+            "reason": "The ReadTimeout and WriteTimeout properties are used to set timeouts for read and write operations on a stream."
+        }
+    ]
+}
